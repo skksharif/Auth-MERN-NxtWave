@@ -14,13 +14,10 @@ Follow the steps below to set up and run the app on your local machine.
 ### 1. Clone the repository
 
 Clone the repository to your local machine using the following command:
-
-
 git clone <repository-url>
 
- Install dependencies
+Install dependencies
 Navigate to the project directory and install all the required dependencies:
-
 cd client
 npm install
 
@@ -32,7 +29,6 @@ This will start the app in development mode, and you can open it in your browser
 
 
 # Server Node.js App
-
 This project is a Node.js backend application built with Express, offering various server-side functionalities like email sending, password hashing, and file handling.
 
 ## Table of Contents
@@ -52,35 +48,28 @@ Before setting up the project, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v14 or later)
 - npm (v6 or later)
 
-## Setup
+## Setup SERVER
 
-### 1. Clone the repository
-
+ 1. Clone the repository
 Clone the repository to your local machine using the following command:
-
-```
 git clone <repository-url>
+
 2. Install dependencies
 Navigate to the project directory and install all the required dependencies:
-
-
-
 cd server
 npm install
-3. Set up environment variables
-Create a .env file in the root of the server directory and add your environment variables. This can include API keys, MongoDB URI, and other sensitive configurations. Example .env file:
 
-text
+4. Set up environment variables
+Create a .env file in the root of the server directory and add your environment variables. This can include API keys, MongoDB URI, and other sensitive configurations. Example .env file:
 
 SENDGRID_API_KEY=your-sendgrid-api-key
 MONGO_URI=your-mongodb-uri
 SECRET_KEY=your-secret-key
+
 4. Start the server
 Once the dependencies are installed and the .env file is configured, you can start the server using:
-
-
-
 node index.js
+
 By default, the server will run on http://localhost:5000. You can access this URL in your browser to confirm the server is running.
 
 Dependencies
