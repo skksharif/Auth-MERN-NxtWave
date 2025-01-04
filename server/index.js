@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: 'https://auth-demo-nxtwave.netlify.app', // Allow only this origin
+    origin: 'https://auth-mern-nxtwave.onrender.com', // Allow only this origin
     methods: 'GET,POST,PUT,DELETE', // Allowed methods
     credentials: true, // Include cookies if needed
 }));
