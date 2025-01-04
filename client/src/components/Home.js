@@ -39,7 +39,7 @@ const Home = () => {
             alignItems:"center"
         }}>
           <img
-            src={`http://localhost:5000/${imageName}`}
+            src={`https://auth-mern-nxtwave.onrender.com/api/auth/${imageName}`}
             alt="Profile"
             style={{ width: "100px", height: "100px", borderRadius: "50%" }}
           />
