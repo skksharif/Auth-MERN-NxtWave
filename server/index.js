@@ -5,7 +5,11 @@ const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://auth-demo-nxtwave.netlify.app', // Allow only this origin
+    methods: 'GET,POST,PUT,DELETE', // Allowed methods
+    credentials: true, // Include cookies if needed
+}));
 app.use(express.json());
 app.use(express.static("uploads"))
 app.use(express.static("routes"))
